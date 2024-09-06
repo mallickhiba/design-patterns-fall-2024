@@ -15,8 +15,7 @@ public class ObjectPool {
     public synchronized PooledObject acquire() throws InterruptedException {
         if (pool.isEmpty() && objectCount < size) {
             System.out.println("Pool is empty, Creating new object with ID: " + (objectCount + 1));
-            PooledObject newObj = new PooledObject(++objectCount); //assign new ids
-            return newObj;
+            return new PooledObject(++objectCount); //assign new ids
         }
         return pool.take();
 

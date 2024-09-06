@@ -13,8 +13,5 @@ public class PooledObject {
         System.out.println("Releasing object with ID: " + id);
     }
 
-    public int getId() {
-        return id;
-    }
 }
 
