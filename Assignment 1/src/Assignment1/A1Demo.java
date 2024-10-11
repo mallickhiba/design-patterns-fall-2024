@@ -1,4 +1,4 @@
-public class Main {
+public class A1Demo {
     public static void main(String[] args) {
         int n = 5;
         ObjectPool pool = new ObjectPool(n);
