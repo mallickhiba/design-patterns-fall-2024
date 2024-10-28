@@ -2,16 +2,18 @@ package Observer;
 
 public class ObserverPatternDemo {
     public static void main(String[] args) {
-        Subject subject = new Subject();
+        ClockTimer timer = new ClockTimer();
+        AnalogClock analogClock = new AnalogClock(timer);
+        DigitalClock digitalClock = new DigitalClock(timer);
 
-        new HexaObserver(subject);
-        new OctalObserver(subject);
-        new BinaryObserver(subject);
-        
-        System.out.println("First state change: 15");	
-        subject.setState(15);
-        System.out.println("Second state change: 10");	
-        subject.setState(10);
-    }
-    
+        // Simulate the clock ticking
+        for (int i = 0; i < 5; i++) {
+            timer.tick();
+            try {
+                Thread.sleep(1000); // Wait 1 second between ticks for demo purposes
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }   
+    } 
 }

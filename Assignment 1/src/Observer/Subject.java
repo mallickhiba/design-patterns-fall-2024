@@ -12,12 +12,12 @@ public class Subject {
     }
     public void setState(int state){
         this.state = state;
-        notifyAllObservers();
+        notifyObservers();
     }
     public void attach(Observer observer){
         observers.add(observer);
     }
-    public void notifyAllObservers(){
+    public void notifyObservers(){
         for (Observer observer : observers) {
             observer.update();
         }
