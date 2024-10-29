@@ -33,5 +33,4 @@ public class ClockTimer extends Subject {
         }
         notifyObservers();
     }
-    
 }

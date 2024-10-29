@@ -3,7 +3,6 @@ package Observer;
 public class AnalogClock extends Observer {
     public AnalogClock(Subject subject) {
         this.subject = subject;
-        this.subject.attach(this);
     }
 
     @Override
