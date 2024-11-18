@@ -1,4 +1,4 @@
-package Assignment4;
+package Assignment4.WithState;
 
 public class Context {
     private State state;

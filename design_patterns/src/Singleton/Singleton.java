@@ -5,7 +5,6 @@ public class Singleton {
     }
     public static Singleton getInstance() {
         if (instance == null) {
-            Class var0 = Singleton.class;
             synchronized (Singleton.class) {
                 if (instance == null) {
                     instance = new Singleton();

@@ -1,5 +1,4 @@
-package Assignment4;
-
+package Assignment4.WithState;
 
 public interface State {
     public void doAction(Context context);
