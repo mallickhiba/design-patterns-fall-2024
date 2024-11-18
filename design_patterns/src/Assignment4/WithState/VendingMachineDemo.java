@@ -1,5 +1,7 @@
 package Assignment4.WithState;
 
+import Assignment4.WaitingForSelectionState;
+
 public class VendingMachineDemo {
     public static void main(String[] args) {
         Context context = new Context();
