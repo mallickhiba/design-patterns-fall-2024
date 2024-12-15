@@ -7,5 +7,5 @@
 - Adapter
 - Decorator
 - Observer
-- Mediator (missing)
+- Mediator
 - State
